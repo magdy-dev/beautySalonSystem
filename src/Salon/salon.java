@@ -35,7 +35,7 @@ public class salon extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         textSub = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
+        textPayment = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         textBalance = new javax.swing.JTextField();
         jButton2 = new javax.swing.JButton();
@@ -182,7 +182,7 @@ public class salon extends javax.swing.JFrame {
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addComponent(jLabel3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jTextField2))
+                        .addComponent(textPayment))
                     .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
@@ -194,7 +194,7 @@ public class salon extends javax.swing.JFrame {
                     .addComponent(jLabel2)
                     .addComponent(textSub, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(textPayment, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(17, 17, 17)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel4)
@@ -333,7 +333,7 @@ public class salon extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
       
     int subtot = Integer.parseInt(textSub.getText());
-    int pay=  Integer.parseInt(textBalance.getText());
+    int pay=  Integer.parseInt(textPayment.getText());
     int bal = pay - subtot;
    
     textBalance.setText(String.valueOf(bal));
@@ -395,8 +395,8 @@ public class salon extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
-    private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField textBalance;
+    private javax.swing.JTextField textPayment;
     private javax.swing.JTextField textSub;
     // End of variables declaration//GEN-END:variables
 }
